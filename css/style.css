@@ -1,0 +1,77 @@
+/*Стили слайдера*/
+.fl_carusel{
+	overflow:hidden;
+	padding: 10px 0;
+}
+.fl_carusel_inner{
+	position: relative;
+    min-height: 576px;
+}
+.fl_carusel_wrap{
+	position:absolute;
+	display:inline-flex;
+	flex-wrap: wrap;
+	margin-left: 7px;
+	width:5000px;
+}
+.fl_top{
+	display: flex;
+    justify-content: space-between;
+	padding: 20px;
+	font-size:30px;
+}
+#fl_carusel_stock{
+	opacity: 1;
+	display:flex;
+}
+.fl_switch_stock, .fl_switch_new{cursor: pointer}
+.fl_switch_stock.active, .fl_switch_new.active{color:#754158; transition: 0.5s; text-decoration:underline;}
+/* .fl_switch_new{} */
+#fl_carusel_new{
+	opacity:0;
+	display:none;
+}
+
+#fl_nav_new{
+	display:none;
+}
+.fl_nav_left, .fl_nav_right{cursor:pointer;}
+
+.fl_carusel_card_item{
+	width:300px;
+	box-shadow: 0px 0px 15px 0px rgba(186,186,186,1);
+	margin-right:21px;
+	padding-bottom:20px;
+}
+.fl_carusel_card_item:last-child{
+	margin-right:0px;
+}
+.fl_carusel_card_item p, h4, .products p, .product-category h2{
+	text-align:center;
+	margin:0 27px;
+}
+.fl_carusel_card_item h4{
+	font-weight: bold;
+	color: #2d2d2d;
+	min-height: 46px;
+}
+.fl_osnprice_value {
+    font-size: 30px;
+	font-weight: bold;
+    color: #754158;
+}
+.fl_rosnprice_value{
+	font-size: 18px;
+	font-weight: bold;
+}
+.fl_osnprice_currency_symbol{
+	font-size: 20px;
+    color: #2d2d2d;
+}
+.fl_button{
+	display:block;
+	padding:10px 15px;
+	background: rgb(117,65,88);
+	background: linear-gradient(90deg, rgba(117,65,88,1) 0%, rgba(168,83,124,1) 100%);
+	color:white;
+}
